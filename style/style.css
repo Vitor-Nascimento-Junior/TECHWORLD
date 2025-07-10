@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+:root {
+        --cor-principal: #2563eb;
+        --cor-segundaria: #e0e7ff;
+        --cor-de-destaque: #fbbf24;
+        --texto-destaque: #1e293b;
+        --font: "Merriweather";
+        --texto: black;
+        --cor-fundo: #f1f5f9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sigmar&family=Sigmar+One&display=swap');
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*{
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-principal);
+    padding: 10px;
+}
+
+header h1{
+    display: inline-flex;
+    font-family: var(--font);
+    color: var(--texto);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--texto);
+    padding: 10px;
+    width: 100%;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+}
+
+#inicio{
+    
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    background-color: var(--cor-de-destaque);
+    color: var(--texto);
+    padding: 20px;
+    margin: 10px;
+    max-width: 320px;
+    border-radius: 20px 5px;
+    border: solid 2px var(--cor-principal);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.357);
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#box-bem-vindo {
+    background-color: var(--cor-segundaria);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 20px 5px;
+    border: solid 2px var(--cor-principal);
+}
+
+footer{
+    background-color: var(--cor-principal);
+    text-align: center;
+    font: normal bold 1.2em "Merriweather", serif;
+    color: var(--texto);
+    padding: 10px;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root{
+        --cor-principal: #1e293b;
+        --cor-segundaria: #2563eb;
+        --cor-de-destaque: #800aa4;
+        --texto-destaque: #f1f5f9;
+        --texto: white;
+        --font: "Merriweather";
+        --cor-fundo: #0f172a;
+    }
+}
