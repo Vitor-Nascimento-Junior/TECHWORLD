@@ -26,11 +26,6 @@
     padding: 0px;
 }
 
-h1 {
-    font-family: 'Exo 2', 'Merriweather', serif;
-    color: var(--texto);
-}
-
 p{
     font: normal 1.2em "Merriweather", serif;
 }
@@ -74,7 +69,7 @@ header {
 
 header h1 {
     display: inline-flex;
-    font-family: ;
+    font-family: 'Exo 2', sans-serif;
     color: var(--texto);
     font-size: 2em;
     align-items: center;
@@ -110,7 +105,6 @@ header nav {
     color: var(--texto-destaque);
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
 }
 #form-busca button:hover {
     background: var(--cor-principal);
